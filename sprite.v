@@ -15,7 +15,6 @@ module sprite_draw(
     output  [9:0]   VGA_G,                  //  VGA Green[9:0]
     output  [9:0]   VGA_B                   //  VGA Blue[9:0]
     );
-     
 
     wire [11:0] colour;
     wire [7:0] x;
@@ -23,8 +22,6 @@ module sprite_draw(
     wire writeEn;
     wire w_ld_xys;
     wire [5:0] w_pixel_loc;
-
-
 
     vga_adapter VGA(
         .resetn(resetn),
