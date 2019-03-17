@@ -24,7 +24,12 @@ Takes 66 clock cycles to completely draw one sprite.
             );
 ```
 
+
+
 ## Sprite Table
+
+![alt text](https://github.com/yoonsikp/CSC258_Project/raw/master/sprites2.png "Logo Title Text 1")
+
 Numbered 0 - 12
 
 * 0: Wall
