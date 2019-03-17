@@ -25,14 +25,18 @@ Takes 66 clock cycles to completely draw one sprite.
 ```
 
 ## Sprite Table
-Numbered 0 - 7
+Numbered 0 - 10
 
-* Blank/black?
-* Wall
-* Crate
-* Player on top of floor
-* Floor
-* Goal
-* Crate on top of Goal (glowing crate)
-* Player on top of Goal (player superimposed on goal)
-`
+* 0: Wall
+* 1: Crate
+* 2: Player
+* 3: Floor
+* 4: Goal
+* 5: Crate on top of Goal (glowing crate)
+* 6: "LEV"
+* 7: "EL"
+* 8: "1-"
+* 9: "2-"
+* 10: "3-"
+* 11: "4-"
+* 12: Blank/black?
