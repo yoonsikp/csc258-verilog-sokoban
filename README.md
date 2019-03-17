@@ -30,7 +30,7 @@ Numbered 0 - 7
 * Blank/black?
 * Wall
 * Crate
-* Player
+* Player on top of floor
 * Floor
 * Goal
 * Crate on top of Goal (glowing crate)
