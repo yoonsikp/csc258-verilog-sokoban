@@ -17,8 +17,8 @@ module finalproject(
     assign resetn = KEY[0];
     
     // Create the colour, x, y and writeEn wires that are inputs to the controller.
-    wire [2:0] w_sprite_id;
-    assign w_sprite_id = SW[9:7];
+    wire [3:0] w_sprite_id;
+    assign w_sprite_id = {1'b0, SW[9:7]};
 
     wire [7:0] w_x;
     assign w_x = {1'b0, SW[6:0]};
