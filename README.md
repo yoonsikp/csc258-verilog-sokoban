@@ -25,7 +25,7 @@ Takes 66 clock cycles to completely draw one sprite.
 ```
 
 ## Sprite Table
-Numbered 0 - 10
+Numbered 0 - 12
 
 * 0: Wall
 * 1: Crate
