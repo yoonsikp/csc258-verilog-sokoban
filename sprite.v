@@ -86,7 +86,7 @@ module sprite_data (
     reg [7:0] x_anchor;
     reg [6:0] y_anchor;
     reg [2:0] sprite_id;
-    wire w_sprite_id;
+    wire [2:0] w_sprite_id;
     assign w_sprite_id = sprite_id;
 
     assign x_out = x_anchor + pixel_loc[2:0];
