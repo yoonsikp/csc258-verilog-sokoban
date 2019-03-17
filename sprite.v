@@ -9,8 +9,8 @@ module sprite_draw(
     output          VGA_CLK,                //  VGA Clock
     output          VGA_HS,                 //  VGA H_SYNC
     output          VGA_VS,                 //  VGA V_SYNC
-    output          VGA_BLANK_N,            //  VGA BLANK
-    output          VGA_SYNC_N,             //  VGA SYNC
+    output          VGA_BLANK,            //  VGA BLANK
+    output          VGA_SYNC,             //  VGA SYNC
     output  [9:0]   VGA_R,                  //  VGA Red[9:0]
     output  [9:0]   VGA_G,                  //  VGA Green[9:0]
     output  [9:0]   VGA_B                   //  VGA Blue[9:0]
@@ -39,8 +39,8 @@ module sprite_draw(
         .VGA_B(VGA_B),
         .VGA_HS(VGA_HS),
         .VGA_VS(VGA_VS),
-        .VGA_BLANK(VGA_BLANK_N),
-        .VGA_SYNC(VGA_SYNC_N),
+        .VGA_BLANK(VGA_BLANK),
+        .VGA_SYNC(VGA_SYNC),
         .VGA_CLK(VGA_CLK));
         defparam VGA.RESOLUTION = "160x120";
         defparam VGA.MONOCHROME = "FALSE";
@@ -175,7 +175,6 @@ module sprite_control(
     always@(posedge clk)
     begin: state_FFs
         if(!resetn)
-            pixel_loc <= 6'b0;
             current_state <= S_LOAD;
         else
             current_state <= next_state;
