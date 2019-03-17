@@ -21,10 +21,10 @@ module finalproject(
     assign w_sprite_id = {1'b0, SW[9:7]};
 
     wire [7:0] w_x;
-    assign w_x = {1'b0, SW[6:0]};
+    assign w_x = {1'b0, SW[3:0], 2'b00};
 
     wire [6:0] w_y;
-    assign w_y = SW[6:0];
+    assign w_y = {1'b0, SW[6:4], 2'b00};
 
     wire w_begin_draw;
     assign w_begin_draw = KEY[1];
