@@ -4,7 +4,7 @@ module sprite_draw(
     input [7:0] x_in,
     input [6:0] y_in,
     input begin_draw,
-    input sprite_id_in,
+    input [2:0] sprite_id_in,
 
     output          VGA_CLK,                //  VGA Clock
     output          VGA_HS,                 //  VGA H_SYNC
