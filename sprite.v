@@ -128,7 +128,7 @@ module sprite_control(
 
     reg [1:0] current_state, next_state; 
     wire finished_counting;
-    assign finished_counting = pixel_loc & 6'b111111;
+    assign finished_counting = pixel_loc == 6'b111111;
 
     localparam  S_LOAD        = 2'd0,
                 S_LOAD_WAIT   = 2'd1,
