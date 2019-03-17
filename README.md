@@ -8,7 +8,7 @@ Roles:
 * module for stage/player/crates bitmap -> sprite id / x / y (20 x 16 times)
 
 ### Yoonsik
-* module takes in above -> x / y / colour (256 times)
+* module takes in above -> x / y / colour (64 times)
 
 ## Sprite Table
 Numbered 0 - 7
