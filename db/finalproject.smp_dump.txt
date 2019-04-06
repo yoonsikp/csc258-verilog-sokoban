@@ -1,24 +1,25 @@
 
-State Machine - |finalproject|control:c0|current_state
-Name current_state.S_DRAW current_state.S_CYCLE_15 current_state.S_CYCLE_14 current_state.S_CYCLE_13 current_state.S_CYCLE_12 current_state.S_CYCLE_11 current_state.S_CYCLE_10 current_state.S_CYCLE_9 current_state.S_CYCLE_8 current_state.S_CYCLE_7 current_state.S_CYCLE_6 current_state.S_CYCLE_5 current_state.S_CYCLE_4 current_state.S_CYCLE_3 current_state.S_CYCLE_2 current_state.S_CYCLE_1 current_state.S_CYCLE_0 current_state.S_LOAD_Y_WAIT current_state.S_LOAD_Y current_state.S_LOAD_X_WAIT current_state.S_LOAD_X 
-current_state.S_LOAD_X 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
-current_state.S_LOAD_X_WAIT 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 1 
-current_state.S_LOAD_Y 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 0 1 
-current_state.S_LOAD_Y_WAIT 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 0 0 1 
-current_state.S_CYCLE_0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 0 0 0 1 
-current_state.S_CYCLE_1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 0 0 0 0 1 
-current_state.S_CYCLE_2 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 0 0 0 0 0 1 
-current_state.S_CYCLE_3 0 0 0 0 0 0 0 0 0 0 0 0 0 1 0 0 0 0 0 0 1 
-current_state.S_CYCLE_4 0 0 0 0 0 0 0 0 0 0 0 0 1 0 0 0 0 0 0 0 1 
-current_state.S_CYCLE_5 0 0 0 0 0 0 0 0 0 0 0 1 0 0 0 0 0 0 0 0 1 
-current_state.S_CYCLE_6 0 0 0 0 0 0 0 0 0 0 1 0 0 0 0 0 0 0 0 0 1 
-current_state.S_CYCLE_7 0 0 0 0 0 0 0 0 0 1 0 0 0 0 0 0 0 0 0 0 1 
-current_state.S_CYCLE_8 0 0 0 0 0 0 0 0 1 0 0 0 0 0 0 0 0 0 0 0 1 
-current_state.S_CYCLE_9 0 0 0 0 0 0 0 1 0 0 0 0 0 0 0 0 0 0 0 0 1 
-current_state.S_CYCLE_10 0 0 0 0 0 0 1 0 0 0 0 0 0 0 0 0 0 0 0 0 1 
-current_state.S_CYCLE_11 0 0 0 0 0 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 
-current_state.S_CYCLE_12 0 0 0 0 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 
-current_state.S_CYCLE_13 0 0 0 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 
-current_state.S_CYCLE_14 0 0 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 
-current_state.S_CYCLE_15 0 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 
-current_state.S_DRAW 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 
+State Machine - |finalproject|game_levels:game|current_state
+Name current_state.S_LEVEL_4 current_state.S_LEVEL_3_WAIT current_state.S_LEVEL_3 current_state.S_LEVEL_2_WAIT current_state.S_LEVEL_2 current_state.S_LEVEL_1_WAIT current_state.S_LEVEL_1 current_state.S_INTRO current_state.S_OUTRO 
+current_state.S_INTRO 0 0 0 0 0 0 0 0 0 
+current_state.S_LEVEL_1 0 0 0 0 0 0 1 1 0 
+current_state.S_LEVEL_1_WAIT 0 0 0 0 0 1 0 1 0 
+current_state.S_LEVEL_2 0 0 0 0 1 0 0 1 0 
+current_state.S_LEVEL_2_WAIT 0 0 0 1 0 0 0 1 0 
+current_state.S_LEVEL_3 0 0 1 0 0 0 0 1 0 
+current_state.S_LEVEL_3_WAIT 0 1 0 0 0 0 0 1 0 
+current_state.S_LEVEL_4 1 0 0 0 0 0 0 1 0 
+current_state.S_OUTRO 0 0 0 0 0 0 0 1 1 
+
+State Machine - |finalproject|keyboard_input:kinp|keyboard_press_driver:kpd|count
+Name count.11 count.10 count.01 count.00 
+count.00 0 0 0 0 
+count.01 0 0 1 1 
+count.10 0 1 0 1 
+count.11 1 0 0 1 
+
+State Machine - |finalproject|sprite_draw:spriteD|sprite_control:s_control|current_state
+Name current_state.S_LOAD current_state.S_DRAW current_state.S_LOAD_WAIT 
+current_state.S_LOAD 0 0 0 
+current_state.S_LOAD_WAIT 1 0 1 
+current_state.S_DRAW 1 1 0 

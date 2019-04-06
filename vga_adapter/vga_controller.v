@@ -174,15 +174,27 @@ module vga_controller(	vga_clock, resetn, pixel_colour, memory_address,
 		VGA_B <= 'b0;
 		if (MONOCHROME == "FALSE")
 		begin
-			for (index = 10-BITS_PER_COLOUR_CHANNEL; index >= 0; index = index - BITS_PER_COLOUR_CHANNEL)
-			begin
-				for (sub_index = BITS_PER_COLOUR_CHANNEL - 1; sub_index >= 0; sub_index = sub_index - 1)
-				begin
-					VGA_R[sub_index+index] <= pixel_colour[sub_index + BITS_PER_COLOUR_CHANNEL*2];
-					VGA_G[sub_index+index] <= pixel_colour[sub_index + BITS_PER_COLOUR_CHANNEL];
-					VGA_B[sub_index+index] <= pixel_colour[sub_index];
-				end
-			end	
+
+//			for (index = 10-BITS_PER_COLOUR_CHANNEL; index >= 0; index = index - BITS_PER_COLOUR_CHANNEL)
+//			begin
+
+//					VGA_R[sub_index+index] <= pixel_colour[sub_index + BITS_PER_COLOUR_CHANNEL*2];
+//					VGA_G[sub_index+index] <= pixel_colour[sub_index + BITS_PER_COLOUR_CHANNEL];
+//					VGA_B[sub_index+index] <= pixel_colour[sub_index];
+
+
+//				for (sub_index = BITS_PER_COLOUR_CHANNEL - 1; sub_index >= 0; sub_index = sub_index - 1)
+//				begin
+					VGA_R[9:4] <= pixel_colour[17:BITS_PER_COLOUR_CHANNEL*2];
+					VGA_G[9:4] <= pixel_colour[BITS_PER_COLOUR_CHANNEL*2 - 1:BITS_PER_COLOUR_CHANNEL];
+					VGA_B[9:4] <= pixel_colour[BITS_PER_COLOUR_CHANNEL-1:0];
+					VGA_R[3:0] <= 4'b0;
+					VGA_G[3:0] <= 4'b0;
+					VGA_B[3:0] <= 4'b0;
+//				end
+
+
+//			end	
 		end
 		else
 		begin
