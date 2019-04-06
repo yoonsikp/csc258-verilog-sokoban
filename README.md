@@ -1,4 +1,6 @@
 # CSC258_Project
+## Description
+An implementation of the Sokoban Game. Move your player and push blocks into the goal!
 
 ## Verilog Files
 #### `finalproject.v`
