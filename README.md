@@ -36,5 +36,5 @@ Numbered 0 - 12
 * 12: Dark Grey
 
 ## Contributors
-Yoonsik Park
-Joshua Boyd
+* Yoonsik Park
+* Joshua Boyd
