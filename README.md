@@ -1,6 +1,16 @@
 # CSC258_Project
 
+## `finalproject.v`
+Top level Verilog file. Contains code that brings together all modules.
 
+## `multi_input.v`
+Contains logic for getting keycodes from the PS2 Keyboard.
+
+## `sprite.v`
+Handles drawing sprites to a VGA framebuffer given the Sprite ID and location.
+
+## `system.v`
+Handles all Game Level Loading/Completion, and Player movement logic. 
 
 ## Sprite Table
 
@@ -20,4 +30,4 @@ Numbered 0 - 12
 * 9: "2-"
 * 10: "3-"
 * 11: "4-"
-* 12: Blank/black?
+* 12: Dark Grey
