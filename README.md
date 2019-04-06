@@ -1,6 +1,6 @@
 # CSC258_Project
 ## Description
-An implementation of the Sokoban Game. Move your player and push blocks into the goal! Watch a demo [here](https://www.youtube.com/watch?v=-CL3kRxOpcg)
+An implementation of the Sokoban Game. Move your player and push blocks into the goal! Watch a demo [here!](https://www.youtube.com/watch?v=-CL3kRxOpcg)
 
 ## Verilog Files
 #### `finalproject.v`
